@@ -1,5 +1,5 @@
 # Connection details for communicating with the printer's moonraker API.
-HOST = '192.168.1.114'
+HOST = '127.0.0.1'
 WS_PORT = 7125
 
 # This will print a calibrated + control pattern and measure the % improvement after tuning
