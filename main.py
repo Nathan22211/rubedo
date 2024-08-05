@@ -16,6 +16,9 @@ from constants import *
 
 PA_START_VALUE = sys.argv[0]
 PA_STOP_VALUE = sys.argv[1]
+BUILD_PLATE_TEMPERATURE = sys.argv[2]
+HOTEND_TEMPERATURE = sys.argv[3]
+HOTEND_IDLE_TEMP = HOTEND_TEMP - 55
 
 def generate_pa_results_for_pattern(pattern_info: PatternInfo)-> list[PaResult]:
     results = []
