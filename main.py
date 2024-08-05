@@ -5,15 +5,17 @@ from pattern_info import PatternInfo
 from record import record_pattern
 from pa_result import PaResult
 from pa import *
-from constants import *
-
+import sys, os
 import klipper.gcode as g
 
 import tempfile
 from pprint import pprint
 
-PA_START_VALUE = 0
-PA_STOP_VALUE = 0.06
+sys.path.insert(0, '~/klipper/printer_data/config')
+from constants import *
+
+PA_START_VALUE = sys.argv[0]
+PA_STOP_VALUE = sys.argv[1]
 
 def generate_pa_results_for_pattern(pattern_info: PatternInfo)-> list[PaResult]:
     results = []
