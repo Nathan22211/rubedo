@@ -19,6 +19,8 @@ PA_STOP_VALUE = sys.argv[1]
 BUILD_PLATE_TEMPERATURE = sys.argv[2]
 HOTEND_TEMPERATURE = sys.argv[3]
 HOTEND_IDLE_TEMP = HOTEND_TEMP - 55
+LAYER_HEIGHT = sys.arv[4]
+RETRACTION_DISTANCE = sys.arv[5]
 
 def generate_pa_results_for_pattern(pattern_info: PatternInfo)-> list[PaResult]:
     results = []
